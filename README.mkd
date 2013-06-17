@@ -1,0 +1,45 @@
+go-sqlite3
+==========
+
+[![Build Status](https://travis-ci.org/changkong/go-sqlite3s.png?branch=master)](https://travis-ci.org/changkong/go-sqlite3s)
+
+go 语言访问sqlite的驱动接口, 遵循 database/sql 接口
+
+说明
+----
+
+fork 自 http://github.com/mattn/go-sqlite3 , 变动如下：
+
+
+* 引入sqlite源码，只采用静态方式
+* sqlite3 更新到 3.7.17
+* 以下环境测试通过：
+
+  * go1.1 windows7 64位 
+  * go1.1 windows xp sp2 32位 
+  * go1.1 Debian 7.0 armV7
+  * go1.1 certos 6.4 386
+
+安装
+----
+
+
+* 环境准备
+
+  * gcc: 各操作系统都需要，我在windows下使用MingGW的一个安装包 http://nuwen.net/mingw.html
+  * golang: 参见 http://golang.org/doc/install
+
+* 安装库
+
+        go get github.com/changkong/go-sqlite3s
+
+发布
+----
+
+直接发布各平台执行文件就好，比共享库的方式，不能共享sqlite代码，每个执行文件稍微大些
+
+
+LICENSE
+-------
+
+MIT 
